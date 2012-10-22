@@ -17,8 +17,6 @@ package org.jivesoftware.util;
 import java.security.MessageDigest;
 import java.util.Random;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * A class that provides easy Blowfish encryption.<p>
@@ -27,8 +25,6 @@ import org.slf4j.LoggerFactory;
  * @author Gaston Dombiak
  */
 public class Blowfish {
-
-    private static final Logger Log = LoggerFactory.getLogger(Blowfish.class);
 
     private BlowfishCBC m_bfish;
     private static Random m_rndGen = new Random();
@@ -47,7 +43,7 @@ public class Blowfish {
             digest.update(password.getBytes());
         }
         catch (Exception e) {
-            Log.error(e.getMessage(), e);
+            e.printStackTrace();
         }
 
         // setup the encryptor (use a dummy IV)

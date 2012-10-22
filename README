@@ -25,8 +25,8 @@ OMFG: Java -> IKVM -> C#, [подозрительно смотрю]). Миним
 Как пользоваться:
 ------------------------------------------------------------------------------------
 
-1. Строим (нужна будет Java 7 и Maven)
- $ mvn clean install
+1. Скачиваем (параноики могут построить через "mvn clean install")
+  https://github.com/shipilev/cvk2012-decrypt/blob/master/target/cvk2012-decrypt.jar
 
 2. Сливаем архив с
     http://www.cvk2012.org/news/protokol_golosovaniya/?Year=2012
